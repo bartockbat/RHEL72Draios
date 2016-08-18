@@ -1,0 +1,1 @@
+docker run --name rhel7sysdig-agent --privileged --net host --pid host -e ACCESS_KEY=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx -e TAGS=role:glen_test,location:01886 -v /var/run/docker.sock:/host/var/run/docker.sock -v /dev:/host/dev -v /proc:/host/proc:ro -v /boot:/host/boot:ro -v /lib/modules:/host/lib/modules:ro -v /usr:/host/usr:ro rhel7/draios 
